@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Image Turbo Prompt Hub</title>
+    <meta name="description" content="Curated bilingual prompt packs for social covers, product shots, and logos.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="#" class="logo">Z-Image <span>Turbo</span></a>
+        <div class="nav-links">
+            <a href="#gallery" data-i18n="nav_styles">Styles</a>
+            <a href="#pricing" data-i18n="nav_packs">Packs</a>
+            <a href="#faq" data-i18n="nav_faq">FAQ</a>
+        </div>
+        <button id="lang-switch" class="lang-switch">EN / 中文</button>
+    </nav>
+
+    <header class="hero">
+        <h1 data-i18n="hero_title">Create Stunning Visuals with Z-Image Turbo</h1>
+        <p data-i18n="hero_subtitle">Generate on-brand social covers, product shots, and logos in minutes.</p>
+        <div class="hero-actions">
+            <a href="#pricing" class="cta-btn primary" data-i18n="hero_cta_primary">Buy Prompt Pack</a>
+            <a href="#gallery" class="cta-btn secondary" data-i18n="hero_cta_secondary">Explore Styles</a>
+        </div>
+        <div class="hero-bullets">
+            <span data-i18n="hero_bullet_1">Professionally-curated prompts</span> •
+            <span data-i18n="hero_bullet_2">Bilingual copy-paste</span> •
+            <span data-i18n="hero_bullet_3">Weekly updates</span>
+        </div>
+    </header>
+
+    <section class="demo-section">
+        <div class="demo-placeholder">
+            <h3 data-i18n="demo_fallback_title">Try These Prompts Now</h3>
+            <div id="demo-fallback-grid" class="gallery-grid mini">
+                <!-- Fallback cards injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <section class="why-us-section">
+        <h2 data-i18n="why_us_title">What makes our prompts different?</h2>
+        <div class="why-us-grid">
+            <div class="why-card">
+                <h3 data-i18n="why_us_1_title">Time Saving</h3>
+                <p data-i18n="why_us_1_desc">Copy and paste directly, no trial and error needed.</p>
+            </div>
+            <div class="why-card">
+                <h3 data-i18n="why_us_2_title">Consistent Style</h3>
+                <p data-i18n="why_us_2_desc">Reusable styles across different subjects.</p>
+            </div>
+            <div class="why-card">
+                <h3 data-i18n="why_us_3_title">Tested & Verified</h3>
+                <p data-i18n="why_us_3_desc">Every prompt comes with example images and parameters.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="sample-pack-section">
+        <h3 data-i18n="sample_pack_title">Not sure yet? Get a Free Sample Pack</h3>
+        <a href="#" class="cta-btn secondary" data-i18n="sample_pack_cta">Download 5 Free Prompts</a>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <div class="tabs" id="gallery-tabs">
+            <button class="tab-btn active" data-category="all" data-i18n="tab_all">All</button>
+            <button class="tab-btn" data-category="portrait" data-i18n="tab_portrait">Portrait</button>
+            <button class="tab-btn" data-category="product" data-i18n="tab_product">Product</button>
+            <button class="tab-btn" data-category="anime" data-i18n="tab_anime">Anime</button>
+            <button class="tab-btn" data-category="logo" data-i18n="tab_logo">Logo</button>
+            <button class="tab-btn" data-category="social" data-i18n="tab_social">Social</button>
+        </div>
+        <div class="gallery-grid" id="gallery-grid">
+            <!-- Cards will be injected here by JS -->
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing-section">
+        <div class="pricing-header">
+            <h2 data-i18n="pack_title">Choose Your Pack</h2>
+            <p data-i18n="pack_subtitle">Get professionally crafted prompt packs to accelerate your workflow.</p>
+        </div>
+        <div class="pricing-grid" id="pricing-grid">
+            <!-- Pricing cards will be injected here by JS -->
+        </div>
+        <div class="comparison-table-container">
+            <table id="comparison-table">
+                <!-- Table injected by JS -->
+            </table>
+        </div>
+    </section>
+
+    <section id="faq" class="faq-section">
+        <h2 data-i18n="faq_title">Frequently Asked Questions</h2>
+        <div class="faq-grid">
+            <div class="faq-item">
+                <h4 data-i18n="faq_q1">Can I use the images for commercial purposes?</h4>
+                <p data-i18n="faq_a1">Yes, the generated images follow the platform's commercial policy.</p>
+            </div>
+            <div class="faq-item">
+                <h4 data-i18n="faq_q2">How do I receive updates?</h4>
+                <p data-i18n="faq_a2">Subscribers receive weekly email updates.</p>
+            </div>
+            <div class="faq-item">
+                <h4 data-i18n="faq_q3">Do you offer refunds?</h4>
+                <p data-i18n="faq_a3">As these are digital goods, we generally do not offer refunds.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#" data-i18n="footer_privacy">Privacy Policy</a>
+            <a href="#" data-i18n="footer_terms">Terms of Service</a>
+            <a href="#" data-i18n="footer_refund">Refund Policy</a>
+        </div>
+        <p data-i18n="footer_rights">© 2025 Z-Image Turbo. All rights reserved.</p>
+    </footer>
+
+    <div id="toast" class="toast">Copied!</div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
